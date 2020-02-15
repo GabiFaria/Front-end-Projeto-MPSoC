@@ -128,8 +128,8 @@ body, input, button {
 
 .flexaplicacoes > div{
     margin: 10px;
-    height: 200px;
-    flex: 1 1 250px; /* 1 se expanda 1 fique menor 250px base que se for menor vai quebrar*/
+    height: 180px;
+    flex: 1 1 300px; /* 1 se expanda 1 fique menor 250px base que se for menor vai quebrar*/
 }
 
 .grafos{
@@ -163,11 +163,14 @@ body, input, button {
 }
 
 .divbotoes{
-    width: 300px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
+.divbotoes ul{
+    width: 100%;
+}
 
 .botoesapp {   
     width: 100%;
@@ -175,8 +178,8 @@ body, input, button {
     display: flex;
     justify-content: center;
     align-items: center; /*alinha verticalmete*/
-    margin: 10px;
     padding: 10px;
+    margin-block-end: 11px;
     background-color:#3ddc97;
     border: 0;
     border-radius: 3px;
@@ -186,4 +189,11 @@ body, input, button {
 
 .botoesapp:hover {
     background:#32B57C;
+}
+
+@media (max-width:610px){
+    .addButtom{
+        width: 100%;
+        margin-top: 10;
+    }
 }
