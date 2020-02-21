@@ -6,7 +6,7 @@ import './global.css'
 
 function App() {
   return (
-    <Welcome />
+    <Simulation />
   );
 }
 
