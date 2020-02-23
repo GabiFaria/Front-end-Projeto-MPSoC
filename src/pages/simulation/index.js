@@ -9,12 +9,15 @@ import './styles.css'
 //Estado: Informação que o componente pode manipular. (Lembrar: imutabilidade )
 
 //Toda função que um componente tem deve ser criada dentro da função do componente.
-function Simulation() {
+function Simulation(props) {
+  const id = props.match.params.id;
+
   return (
     <>
       <header className="header">
         <nav>
           <icon className="voltar"><TiArrowLeft size={30} /></icon>
+          <p>Simulation ID: {id}</p>
         </nav>
       </header>
 

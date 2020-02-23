@@ -29,7 +29,6 @@ body, input, button {
     height: 20px;
     background-color:#011936;
     align-items: center; /*alinha os itens no centro do header em relação a altura*/
-
 }
 .voltar{
     display: flex;
