@@ -10,7 +10,9 @@ import './styles.css'
 //Estado: Informação que o componente pode manipular. (Lembrar: imutabilidade )
 
 //Toda função que um componente tem deve ser criada dentro da função do componente.
-function Simulation() {
+function Simulation(props) {
+  const id = props.match.params.id;
+  
   const [contMatriz, setCont] = useState(['Matriz']);
   const [openMatriz, setOpen] = useState(false);
 
