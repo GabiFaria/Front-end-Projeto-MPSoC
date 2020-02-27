@@ -5,26 +5,7 @@
     align-items: center; /*alinha os itens no centro do header em relação a altura*/
 
 }
-.voltar{
-    display: flex;
-    vertical-align: middle;
-    color: #fcfcfc;
-    cursor: pointer;
-}
-.menu{
-    display: flex;
-}
 
-.menu li {
-    margin-left: 10px; /*margem em largura*/
-}
-
-.menu li a{
-    display: block;
-    padding: 10px; /*margem em altura*/
-}
-
-/* CSS FLEXBOX*/
 .flexheuristica{
     display: flex; /*deixa os elemento um do lado do outro*/
     flex-wrap: wrap; 
@@ -44,45 +25,6 @@
     flex: 1 1 250px; /* 1 se expanda 1 fique menor 250px base que se for menor vai quebrar*/
     padding: 10px;
     box-shadow: 0 0 14px 0 rgb(0,0,0.0.02);
-}
-
-.matriz{
-    background-color: #CDE1F0;
-    height: 57vh;
-}
-
-.matriz a {
-    max-width: 100%;
-    min-width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 300px; /*alinheir no centro da div*/
-    font-size: 20px;
-}
-
-.infos{
-    background-color: #CDE1F0;
-}
-
-.infos li a{
-    font-size: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; /*alinha verticalmete*/
-    padding: 5px;
-}
-
-.extendInfo{
-    cursor: pointer;
-}
-
-.maisinfo{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; /*alinha verticalmete*/
-    background-color: #CDE1F0;
-    padding: 5px;
 }
 
 .addButtom{
@@ -113,65 +55,6 @@
     margin: 10px;
     height: 200px;
     flex: 1 1 300px; /* 1 se expanda 1 fique menor 250px base que se for menor vai quebrar*/
-}
-
-.grafos{
-    background-color: #ddd7e6;
-}
-.grafos p{
-    justify-content: center;
-    text-align: center;
-    line-height: 200px;
-}
-.aplicacoes{
-    background-color: #ddd7e6;
-
-}
-
-.aplicacoes p{
-    justify-content: center;
-    text-align: center;
-    line-height: 200px;
-}
-
-.infosapp{
-    background-color: #ddd7e6;
-
-}
-
-.infosapp p {
-    justify-content: center;
-    text-align: center;
-    line-height: 200px;
-}
-
-.divbotoes{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.divbotoes ul{
-    width: 100%;
-}
-
-.botoesapp {   
-    width: 100%;
-    color:#fcfcfc;
-    display: flex;
-    justify-content: center;
-    align-items: center; /*alinha verticalmete*/
-    padding: 13px;
-    margin-block-end: 11px;
-    background-color:#3ddc97;
-    border: 0;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background 0.5s;
-}
-
-.botoesapp:hover {
-    background:#32B57C;
 }
 
 @media (max-width:610px){

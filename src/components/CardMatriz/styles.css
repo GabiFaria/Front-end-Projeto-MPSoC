@@ -1,0 +1,38 @@
+.matriz{
+    background-color: #CDE1F0;
+    height: 57vh;
+}
+
+.matriz a {
+    max-width: 100%;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 300px; /*alinheir no centro da div*/
+    font-size: 20px;
+}
+
+.infos{
+    background-color: #CDE1F0;
+}
+
+.infos li a{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /*alinha verticalmete*/
+    padding: 5px;
+}
+
+.extendInfo{
+    cursor: pointer;
+}
+
+.maisinfo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /*alinha verticalmete*/
+    background-color: #CDE1F0;
+    padding: 5px;
+}

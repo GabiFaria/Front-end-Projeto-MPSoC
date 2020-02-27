@@ -1,0 +1,28 @@
+.divbotoes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divbotoes ul{
+    width: 100%;
+}
+
+.botoesapp {   
+    width: 100%;
+    color:#fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*alinha verticalmete*/
+    padding: 13px;
+    margin-block-end: 11px;
+    background-color:#3ddc97;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.botoesapp:hover {
+    background:#32B57C;
+}
