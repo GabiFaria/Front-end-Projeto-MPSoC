@@ -16,12 +16,17 @@
     display: block;
     padding: 10px; /*margem em altura*/
 }
-.voltar{
+
+.botao{
+    background-color: #011936;
     display: flex;
     vertical-align: middle;
-    color: #fcfcfc;
     cursor: pointer;
+    border: none;
+    height: 20px;
+    margin-block-end: 12px;
 }
+
 .menu{
     display: flex;
 }

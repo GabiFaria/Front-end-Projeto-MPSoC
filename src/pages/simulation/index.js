@@ -36,7 +36,13 @@ function Simulation(props) {
             <CardMatriz indexHeu={index}/>
             ))
         }
-        <button onClick={tratarCont} className="addButtom"><div><IoIosAddCircle color='#fcfcfc' size={20}/></div></button>
+
+        <button onClick={tratarCont} className="addButtom">
+          <div>
+            <IoIosAddCircle color='#fcfcfc' size={30}/>
+          </div>
+        </button>
+        
       </section>
       
       <section className="flexaplicacoes">
