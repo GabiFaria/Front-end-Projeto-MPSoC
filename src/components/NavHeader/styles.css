@@ -1,3 +1,7 @@
+body{
+    background-color: #FCF6B1;
+}
+
 .voltar{
     display: flex;
     vertical-align: middle;
@@ -17,14 +21,14 @@
     padding: 10px; /*margem em altura*/
 }
 
-.botao{
-    background-color: #011936;
+.voltar{
+    background-color: #353535;
     display: flex;
     vertical-align: middle;
     cursor: pointer;
     border: none;
     height: 20px;
-    margin-block-end: 12px;
+    margin-block-end: 11px;
 }
 
 .menu{

@@ -13,17 +13,15 @@ function NavHeader (){
   
   return(
     <nav>
-      <button 
-      className="botao" 
-      onClick={gotoWelcome} 
-      >
-        {
-          redirect?(<Redirect to="/"/>):null
-        }
-        <div className='voltar'>
+        <div 
+        className='voltar'
+        onClick={gotoWelcome} 
+        >
           <TiArrowLeft size={30} color='#fcfcfc'/>
+          {
+          redirect?(<Redirect to="/"/>):null
+          }
         </div>
-      </button>
     </nav>
   );
 };

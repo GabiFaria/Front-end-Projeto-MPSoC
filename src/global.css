@@ -14,12 +14,14 @@ html{
     height: 100vh;
 }
 body{
+    background-color: unset;
     height: 100vh;
+    min-width: 910px;
     -webkit-font-smoothing: antialiased;
 }
 a{
     text-decoration: none;
 } 
-body, input, button {
+body, input, button, a, p {
     font-family: Roboto, sans-serif;
 }

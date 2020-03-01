@@ -1,5 +1,5 @@
 .matriz{
-    background-color: #CDE1F0;
+    background-color: #D2D7DF;
     height: 57vh;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .infos{
-    background-color: #CDE1F0;
+    background-color: #D2D7DF;
 }
 
 .infos li a{
@@ -33,6 +33,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center; /*alinha verticalmete*/
-    background-color: #CDE1F0;
+    background-color: #D2D7DF;
     padding: 5px;
 }

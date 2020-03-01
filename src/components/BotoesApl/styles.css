@@ -1,5 +1,4 @@
 .divbotoes{
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -16,7 +15,7 @@
     align-items: center; /*alinha verticalmete*/
     padding: 13px;
     margin-block-end: 11px;
-    background-color:#3ddc97;
+    background-color:#9E2B25;
     border: 0;
     border-radius: 3px;
     cursor: pointer;
@@ -24,5 +23,5 @@
 }
 
 .botoesapp:hover {
-    background:#32B57C;
+    background:#571815;
 }

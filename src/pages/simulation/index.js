@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { IoIosAddCircle } from "react-icons/io";
 
 import './styles.css'
@@ -17,7 +17,7 @@ import BotoesApl from '../../components/BotoesApl';
 //Toda função que um componente tem deve ser criada dentro da função do componente.
 function Simulation(props) {
   const id = props.match.params.id;
-  
+
   const [contMatriz, setCont] = useState(['Matriz']);
 
   function tratarCont() {
@@ -27,34 +27,34 @@ function Simulation(props) {
   return (
     <>
       <header className="header">
-        <NavHeader/>
+        <NavHeader />
       </header>
 
-      <section className="flexheuristica">
-        {
-          contMatriz.map( (matriz, index) => (
-            <CardMatriz indexHeu={index}/>
+      <section className='screen'>
+
+        <div className="flexheuristica">
+          {
+            contMatriz.map((matriz, index) => (
+              <CardMatriz indexHeu={index} />
             ))
-        }
+          }
 
-        <button onClick={tratarCont} className="addButtom">
-          <div>
-            <IoIosAddCircle color='#fcfcfc' size={30}/>
-          </div>
-        </button>
-        
-      </section>
-      
-      <section className="flexaplicacoes">
-        <Grafos/>
-        <Aplicacoes/>
-        <InfosAplicacoes/>
-        <BotoesApl/>
-      </section>
+          <button onClick={tratarCont} className="addButtom">
+            <div>
+              <IoIosAddCircle color='#fcfcfc' size={30} />
+            </div>
+          </button>
+        </div>
 
+        <div className="flexaplicacoes">
+          <Grafos />
+          <Aplicacoes />
+          <InfosAplicacoes />
+          <BotoesApl />
+        </div>
+      </section>
     </>
   );
 }
 
 export default Simulation;
- 
