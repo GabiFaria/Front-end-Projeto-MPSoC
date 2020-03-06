@@ -5,7 +5,6 @@ body, ul, li, p{
     padding: 0px;
     list-style: none; 
     font-size: 1.2rem;
-    font-family: Arial;
 }
 #root{
     height: 100%;
@@ -14,7 +13,7 @@ html{
     height: 100vh;
 }
 body{
-    background-color: unset;
+    background-color: #030027;
     height: 100vh;
     min-width: 910px;
     -webkit-font-smoothing: antialiased;

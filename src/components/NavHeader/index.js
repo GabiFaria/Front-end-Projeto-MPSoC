@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { TiArrowLeft } from "react-icons/ti";
+import { IoIosUndo } from "react-icons/io";
 import './styles.css';
 import { Redirect } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ function NavHeader (){
         className='voltar'
         onClick={gotoWelcome} 
         >
-          <TiArrowLeft size={30} color='#fcfcfc'/>
+          <IoIosUndo size={22} color='#fcfcfc'/>
           {
           redirect?(<Redirect to="/"/>):null
           }

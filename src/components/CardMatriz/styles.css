@@ -1,38 +1,18 @@
+
 .matriz{
-    background-color: #D2D7DF;
-    height: 57vh;
+    background-color: #DAFFED;
+    height: 512px;
+    width: 512px;
 }
 
 .matriz a {
     max-width: 100%;
     min-width: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 300px; /*alinheir no centro da div*/
     font-size: 20px;
 }
 
-.infos{
-    background-color: #D2D7DF;
+.matriz strong {
+    color: #030027;
 }
 
-.infos li a{
-    font-size: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; /*alinha verticalmete*/
-    padding: 5px;
-}
-
-.extendInfo{
-    cursor: pointer;
-}
-
-.maisinfo{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; /*alinha verticalmete*/
-    background-color: #D2D7DF;
-    padding: 5px;
-}

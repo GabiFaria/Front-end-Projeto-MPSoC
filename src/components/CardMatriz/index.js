@@ -13,34 +13,8 @@ function CardMatriz({ indexHeu }) {
   }
   return (
     <div>
-      <strong>Heurística {indexHeu}</strong>
       <div className="matriz">
-      </div>
-      <ul className="infos">
-        <li><a>Info 1</a></li>
-        <li><a>Info 2</a></li>
-        <li><a>Info 3</a></li>
-        {
-          openMatriz ? (
-            <ul>
-              <li><a>Info 4</a></li>
-              <li><a>Info 5</a></li>
-            </ul>
-          ) : null
-        }
-      </ul>
-      <div className="maisinfo">
-
-        {
-          openMatriz ? (
-            <div
-              onClick={(e) => toggleMatriz(e)}
-              className="extendInfo"
-            >
-              <IoMdContract color='#fcfcfc' size={30} />
-            </div>
-          ) : <div onClick={toggleMatriz} className="extendInfo"><IoMdExpand color='#fcfcfc' size={30} /></div>
-        }
+        <strong className="name">Heurística {indexHeu}</strong>
       </div>
     </div>
   );

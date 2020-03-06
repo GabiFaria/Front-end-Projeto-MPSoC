@@ -28,7 +28,8 @@ body{
     cursor: pointer;
     border: none;
     height: 20px;
-    margin-block-end: 11px;
+    margin-block-end: 3px;
+    margin-left: 5px;
 }
 
 .menu{
