@@ -23,7 +23,6 @@ function Simulation(props) {
   function tratarCont() {
     setCont([...contMatriz, "Matriz"]);
   };
-
   return (
     <>
       <header className="header">
@@ -38,15 +37,10 @@ function Simulation(props) {
               <CardMatriz indexHeu={index} />
             ))
           }
-          <button onClick={tratarCont} className="addButtom">
-            <div>
-              <IoIosAddCircle color='#fcfcfc' size={30} />
-            </div>
-          </button>
         </div>
         <div className="flexaplicacoes">
           <div className='dados'>
-            <BotoesApl />
+            <BotoesApl addCallBack={tratarCont}/>
             <Grafos />
             <Aplicacoes />
             <InfosAplicacoes />

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { IoMdExpand } from "react-icons/io";
-import { IoMdContract } from "react-icons/io";
+
 import './styles.css'
 
 
