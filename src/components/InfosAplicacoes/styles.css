@@ -1,0 +1,10 @@
+.infosapp{
+    background-color: #DAFFED;
+
+}
+
+.infosapp p {
+    justify-content: center;
+    text-align: center;
+    line-height: 200px;
+}

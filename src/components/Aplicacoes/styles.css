@@ -1,0 +1,10 @@
+.aplicacoes{
+    background-color: #DAFFED;
+
+}
+
+.aplicacoes p{
+    justify-content: center;
+    text-align: center;
+    line-height: 200px;
+}

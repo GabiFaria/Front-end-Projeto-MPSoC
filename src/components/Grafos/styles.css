@@ -1,0 +1,8 @@
+.grafos{
+    background-color: #DAFFED;
+}
+.grafos p{
+    justify-content: center;
+    text-align: center;
+    line-height: 200px;
+}

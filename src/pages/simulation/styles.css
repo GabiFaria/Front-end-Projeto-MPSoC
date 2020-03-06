@@ -1,93 +1,46 @@
+
 .header{
     display: flex;
     height: 20px;
-    background-color:#011936;
+    width: 100%;
+    background-color: #353535;
     align-items: center; /*alinha os itens no centro do header em relação a altura*/
-
-}
-.voltar{
-    display: flex;
-    vertical-align: middle;
-    color: #fcfcfc;
-    cursor: pointer;
-}
-.menu{
-    display: flex;
+    margin-block-end: 20px;
+    position: fixed;
 }
 
-.menu li {
-    margin-left: 10px; /*margem em largura*/
+.screen{
+    display: grid;
+    grid-template-columns: auto 300px;
 }
 
-.menu li a{
-    display: block;
-    padding: 10px; /*margem em altura*/
-}
-
-/* CSS FLEXBOX*/
 .flexheuristica{
+    width: 100%;
+    height: 100%;
     display: flex; /*deixa os elemento um do lado do outro*/
-    flex-wrap: wrap; 
-    margin: auto;
+    flex-flow: row wrap;
+    margin-top: 25px;
     border-radius: 2px;
 }
 
 .flexheuristica strong {
     display: flex;
+    margin: 5px;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    color: #293132;
+    color: #fcfcfc;
 }
 
 .flexheuristica > div {
-    flex: 1 1 250px; /* 1 se expanda 1 fique menor 250px base que se for menor vai quebrar*/
+    min-width: 512px;
+    flex: 1 1 500px; /* 1 se expanda 1 fique menor 250px base que se for menor vai quebrar*/
     padding: 10px;
-    box-shadow: 0 0 14px 0 rgb(0,0,0.0.02);
-}
-
-.matriz{
-    background-color: #CDE1F0;
-    height: 57vh;
-}
-
-.matriz a {
-    max-width: 100%;
-    min-width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 300px; /*alinheir no centro da div*/
-    font-size: 20px;
-}
-
-.infos{
-    background-color: #CDE1F0;
-}
-
-.infos li a{
-    font-size: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; /*alinha verticalmete*/
-    padding: 5px;
-}
-
-.extendInfo{
-    cursor: pointer;
-}
-
-.maisinfo{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; /*alinha verticalmete*/
-    background-color: #CDE1F0;
-    padding: 5px;
 }
 
 .addButtom{
-    background-color:#3ddc97;
-    margin-top: 27px;
+    background-color:#662C91;
+    margin-top: 5px;
     margin-right: 10px;
     margin-left: 10px;
     margin-block-end: 10px;
@@ -95,88 +48,46 @@
     border-radius: 3px;
     cursor: pointer;
     transition: background 0.5s;
+    width: 100%;
 }
 
 .addButtom:hover{
-    background: #32B57C;
+    background: #8AEA92;
 }
-
 
 .flexaplicacoes{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-
+    height: 100%
 }
+.dados{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    margin-top: 35px;
+} 
 
+.dados> div{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-block-end: 10px;
+}
 .flexaplicacoes > div{
-    margin: 10px;
-    height: 200px;
-    flex: 1 1 300px; /* 1 se expanda 1 fique menor 250px base que se for menor vai quebrar*/
+    margin-right: 10px;
+    margin-block-end: 10px;
 }
 
-.grafos{
-    background-color: #ddd7e6;
-}
-.grafos p{
-    justify-content: center;
-    text-align: center;
-    line-height: 200px;
-}
-.aplicacoes{
-    background-color: #ddd7e6;
-
-}
-
-.aplicacoes p{
-    justify-content: center;
-    text-align: center;
-    line-height: 200px;
-}
-
-.infosapp{
-    background-color: #ddd7e6;
-
-}
-
-.infosapp p {
-    justify-content: center;
-    text-align: center;
-    line-height: 200px;
-}
-
-.divbotoes{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.divbotoes ul{
-    width: 100%;
-}
-
-.botoesapp {   
-    width: 100%;
-    color:#fcfcfc;
-    display: flex;
-    justify-content: center;
-    align-items: center; /*alinha verticalmete*/
-    padding: 13px;
-    margin-block-end: 11px;
-    background-color:#3ddc97;
-    border: 0;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background 0.5s;
-}
-
-.botoesapp:hover {
-    background:#32B57C;
-}
-
-@media (max-width:610px){
-    .addButtom{
+@media (max-width:920px) {
+    .screen {
+        display: inline;
+    }
+    .flexheuristica{
         width: 100%;
-        margin-top: 10;
+    }
+    .flexaplicacoes {
+        width: 100%;
+        position: unset;
+        top: 0;
+        margin: 10px;
+        margin-left: 0px;
     }
 }

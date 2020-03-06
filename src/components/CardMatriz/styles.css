@@ -1,0 +1,18 @@
+
+.matriz{
+    background-color: #DAFFED;
+    height: 512px;
+    width: 512px;
+}
+
+.matriz a {
+    max-width: 100%;
+    min-width: 500px;
+    display: flex;
+    font-size: 20px;
+}
+
+.matriz strong {
+    color: #030027;
+}
+

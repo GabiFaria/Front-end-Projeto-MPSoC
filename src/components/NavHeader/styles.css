@@ -1,0 +1,46 @@
+body{
+    background-color: #FCF6B1;
+}
+
+.voltar{
+    display: flex;
+    vertical-align: middle;
+    color: #fcfcfc;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px; /*margem em largura*/
+}
+
+.menu li a{
+    display: block;
+    padding: 10px; /*margem em altura*/
+}
+
+.voltar{
+    background-color: #353535;
+    display: flex;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    height: 20px;
+    margin-block-end: 3px;
+    margin-left: 5px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px; /*margem em largura*/
+}
+
+.menu li a{
+    display: block;
+    padding: 10px; /*margem em altura*/
+}
