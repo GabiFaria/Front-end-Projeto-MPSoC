@@ -13,7 +13,7 @@ function CardMatriz({ indexHeu }) {
   return (
     <div>
       <div className="matriz">
-        <strong className="name">Heurística {indexHeu}</strong>
+        <p className="name">Heurística {indexHeu}</p>
       </div>
     </div>
   );
