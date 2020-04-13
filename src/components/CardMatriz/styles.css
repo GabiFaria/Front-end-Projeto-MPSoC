@@ -2,6 +2,7 @@
 .matriz{
     margin-left:auto;
     margin-right:auto;
+    margin-top: 40px;
     background-color: #F0F0F3;
     box-shadow: 3px 3px 10px 
     rgba(174, 174, 192, 0.4), 
@@ -33,3 +34,4 @@
     rgba(255, 255, 255, 0.7);
     border-radius: 10px;
 }
+

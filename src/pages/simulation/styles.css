@@ -15,10 +15,11 @@
 
 .screen{
     display: grid;
-    grid-template-columns: auto 300px;
+    grid-template-columns: 300px auto;
 }
 
 .flexheuristica{
+    right: 0;
     width: 100%;
     height: 100%;
     display: flex; /*deixa os elemento um do lado do outro*/
@@ -28,8 +29,7 @@
 
 .flexheuristica > div {
     min-width: 512px;
-    flex: 1 1 500px; /* 1 se expanda 1 fique menor 250px base que se for menor vai quebrar*/
-    padding: 20px;
+    flex: 1 1 512px; /* 1 se expanda 1 fique menor 250px base que se for menor vai quebrar*/
 }
 
 .flexaplicacoes{
@@ -37,7 +37,7 @@
 }
 .dados{
     position: fixed;
-    right: 0;
+    left: 20px;
     height: 100%;
     width: 300px;
     margin-top: 35px;
@@ -56,9 +56,6 @@
 @media (max-width:920px) {
     .screen {
         display: inline;
-    }
-    .flexheuristica{
-
     }
     .flexaplicacoes {
         width: 100%;
