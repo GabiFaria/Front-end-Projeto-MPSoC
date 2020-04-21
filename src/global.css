@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 body, ul, li, p{
     margin: 0px;
@@ -13,14 +12,14 @@ html{
     height: 100vh;
 }
 body{
-    background-color: #030027;
+    background-color: #F0F0F3;
     height: 100vh;
     min-width: 910px;
     -webkit-font-smoothing: antialiased;
 }
 a{
     text-decoration: none;
-}
+} 
 * {
-    font-family: Roboto, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
