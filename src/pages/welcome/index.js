@@ -1,12 +1,32 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 
-import { MdMemory } from "react-icons/md";
-import { MdDeveloperBoard } from "react-icons/md";
-import { MdSubject } from "react-icons/md";
-import { MdDeviceHub } from "react-icons/md";
+import {
+  MdMemory,
+  MdDeveloperBoard,
+  MdSubject,
+  MdDeviceHub
+} from "react-icons/md";
 
-import './styles.css';
+import {
+  Container,
+  Header,
+  Main,
+  CenterDiv,
+  ListColumn
+} from './styles';
+
+import CardIcon from './components/CardIcon';
+import ListView from './components/ListView';
+
+const elements = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f"
+]
 
 function Welcome() {
   const history = useHistory();
@@ -16,37 +36,40 @@ function Welcome() {
   }
 
   return (
-    <div className="welcome">
-      <header>
-        <MdMemory size={192} color='#724EC0'  />
+    <Container>
+      <Header>
+        <MdMemory size={192} color='#745FF2' />
         <h1>MPSoC Simulator</h1>
-      </header>
+      </Header>
 
-      <main>
-        <ul>
-          <li>
-            <button onClick={handleClick}>
-              <MdDeveloperBoard size={48} color='#5A3E90' />
-              <p>Nova Simulação</p>
-            </button>
-          </li>
+      <Main>
+        <CenterDiv>
+          <ListColumn>
+            <CardIcon
+              onClick={handleClick}
+              Icon={MdDeveloperBoard}
+              name="Nova Simulação"
+            />
+            <CardIcon
+              onClick={handleClick}
+              Icon={MdSubject}
+              name="Nova Héuristica"
+            />
+            <CardIcon
+              onClick={handleClick}
+              Icon={MdDeviceHub}
+              name="Nova Aplicação"
+            />
+          </ListColumn>
+        
 
-          <li>
-            <button>
-              <MdSubject size={48} color='#5A3E90' />
-              <p>Nova Héuristica</p>
-            </button>
-          </li>
-
-          <li>
-            <button>
-              <MdDeviceHub size={48} color='#5A3E90' />
-              <p>Nova Aplicação</p>
-            </button>
-          </li>
-        </ul>
-      </main>
-    </div>
+          <ListView
+            title="Simulações"
+            elements={elements}
+          />
+        </CenterDiv>
+      </Main>
+    </Container>
   );
 }
 
