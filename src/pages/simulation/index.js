@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { IoIosAddCircle, IoIosMenu } from "react-icons/io";
-
 import './styles.css'
 
 import NavHeader from '../../components/NavHeader';
