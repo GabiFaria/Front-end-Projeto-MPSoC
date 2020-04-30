@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import GraphMatrix from '../GraphMatrix';
+
 import './styles.css'
 
 
@@ -13,8 +15,9 @@ function CardMatriz({ indexHeu }) {
   return (
     <div>
       <div className="matriz">
+        <p>Heuristica {indexHeu}</p>
         <div className='graph'>
-          <GraphMatrix/>
+          <GraphMatrix />
         </div>
       </div>
     </div>

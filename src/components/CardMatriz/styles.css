@@ -21,13 +21,12 @@
 }
 
 .matriz p {
-    color: #030027;
     text-align:center;
-    line-height:512px;
-    width:512px;
-    height:512px;
+    color: #728AB7;
 }
+
 .graph {
+    margin-top: 0px;
     margin-left: 6px;
     margin-right: 6px;
 }

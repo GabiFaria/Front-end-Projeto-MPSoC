@@ -11,12 +11,12 @@ function GraphMatrix() {
         for (let i = 1; i <= xnum; i++) {
             let y = sizeH / 4; //espaçamento da margem em x
             for (let j = 1; j <= ynum; j++) {
-                p5.rect(x, y, sizeW / 2, sizeH / 2); //desenha quadrados
+                p5.rect(x, y, sizeW / 2, sizeH / 2,5); //desenha quadrados
                 if (i != xnum) {
                     p5.rect(x + (sizeW / 2), y + (sizeH / 2) / 3, sizeW / 2, (sizeH / 2) / 3); //desenha conexões em x 
                 }
                 if (j != ynum) {
-                    p5.rect(x + (sizeW / 2) / 3, y + (sizeH / 2), (sizeW / 2) / 3, sizeH / 2);
+                    p5.rect(x + (sizeW / 2) / 3, y + (sizeH / 2), (sizeW / 2) / 3, sizeH / 2); //desenha conexões em x 
                 }
                 y = y + (500 / (ynum));
             }
@@ -29,7 +29,7 @@ function GraphMatrix() {
 
     const draw = p5 => {
         p5.background('#F0F0F3');
-        drawTarget(p5, 3, 5);
+        drawTarget(p5, 6, 6);
     }
 
     return (
