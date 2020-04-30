@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 
 body, ul, li, p{
     margin: 0px;
     padding: 0px;
-    list-style: none; 
+    list-style: none;
 }
 
 #root{
@@ -22,5 +22,5 @@ a{
     text-decoration: none;
 }
 * {
-    font-family: Roboto, sans-serif;
+    font-family: Rubik, sans-serif;
 }
