@@ -13,7 +13,9 @@ function CardMatriz({ indexHeu }) {
   return (
     <div>
       <div className="matriz">
-        <p className="name">Heurística {indexHeu}</p>
+        <div className='graph'>
+          <GraphMatrix/>
+        </div>
       </div>
     </div>
   );
