@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { IoIosAddCircle } from "react-icons/io";
-
 import './styles.css'
 
 import NavHeader from '../../components/NavHeader';
@@ -20,6 +18,12 @@ function Simulation(props) {
 
   const [contMatriz, setCont] = useState(['Matriz']);
 
+  const [openMenu, setMenu] = useState(false);
+
+  function tratarMenu (){
+    setMenu(!openMenu);
+  }
+
   function tratarCont() {
     setCont([...contMatriz, "Matriz"]);
   };
@@ -31,20 +35,23 @@ function Simulation(props) {
 
       <section className='screen'>
 
+      <div className="flexaplicacoes">
+          <div className='dados'>
+            <BotoesApl addCallBack={tratarCont} />
+            <Grafos />
+            <Aplicacoes />
+            <InfosAplicacoes />
+          </div>
+
+      </div>
+
+        
         <div className="flexheuristica">
           {
             contMatriz.map((matriz, index) => (
               <CardMatriz indexHeu={index} />
             ))
           }
-        </div>
-        <div className="flexaplicacoes">
-          <div className='dados'>
-            <BotoesApl addCallBack={tratarCont}/>
-            <Grafos />
-            <Aplicacoes />
-            <InfosAplicacoes />
-          </div>
         </div>
       </section>
     </>

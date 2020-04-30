@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css?family=Rubik');
+
 
 body, ul, li, p{
     margin: 0px;
@@ -10,17 +12,18 @@ body, ul, li, p{
     height: 100%;
 }
 html{
-    height: 100vh;
+    height: 100%;
 }
 body{
-    background-color: #030027;
-    height: 100vh;
-    min-width: 910px;
+    background-color: #F0F0F3;
+    height: 100%;
+    min-width: 960px;
+    min-height: 768px;
     -webkit-font-smoothing: antialiased;
 }
 a{
     text-decoration: none;
-}
+} 
 * {
-    font-family: Rubik, sans-serif;
+    font-family:'Rubik', sans-serif;
 }

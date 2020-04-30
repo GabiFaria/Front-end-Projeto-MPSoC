@@ -12,28 +12,28 @@ function BotoesApl({addCallBack}) {
           <button
             onClick={addCallBack}
             className="botoesapp">
-            <IoMdCode size={30}/>
+            <IoMdCode size={30} color='#C590EF'/>
           </button>
         </li>
 
         <li>
           <button
             className="botoesapp">
-            <MdDeviceHub size={30}/>
+            <MdDeviceHub size={30} color='#C590EF'/>
           </button>
         </li>  
 
         <li>
           <button
             className="botoesapp">
-            <IoIosPause size={30}/>
+            <IoIosPause size={30} color='#C590EF'/>
           </button>
         </li>
 
         <li>
           <button
             className="botoesapp">
-            <IoMdDownload size={30}/>
+            <IoMdDownload size={30} color='#C590EF'/>
           </button>
         </li>
       </ul>

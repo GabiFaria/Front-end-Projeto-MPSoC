@@ -17,8 +17,8 @@ function NavHeader (){
         className='voltar'
         onClick={gotoWelcome} 
         >
-          <IoIosUndo size={22} color='#fcfcfc'/>
-          {
+          <IoIosUndo size={22} color='#C590EF'/>
+          { 
           redirect?(<Redirect to="/"/>):null
           }
         </div>

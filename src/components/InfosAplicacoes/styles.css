@@ -1,10 +1,23 @@
 .infosapp{
-    background-color: #DAFFED;
+    background-color: #F0F0F3;
+    box-shadow: 2px 2px 8px 
+    rgba(174, 174, 192, 0.4), 
+    -2px -2px 8px #FFFFFF;
+    border-radius: 0 0 5px 5px;
 
 }
 
 .infosapp p {
+    color: #728AB7;
     justify-content: center;
     text-align: center;
     line-height: 200px;
+}
+
+.infosapp:hover{
+    box-shadow: inset 1.5px 1.5px 1px 
+    rgba(174, 174, 192, 0.2), 
+    inset -1px -1px 1px 
+    rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
 }
