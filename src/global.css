@@ -1,8 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
 body, ul, li, p{
     margin: 0px;
     padding: 0px;
-    list-style: none; 
+    list-style: none;
 }
 
 #root{
@@ -22,5 +25,5 @@ a{
     text-decoration: none;
 } 
 * {
-    font-family: 'Rubik', sans-serif;
+    font-family:'Rubik', sans-serif;
 }
