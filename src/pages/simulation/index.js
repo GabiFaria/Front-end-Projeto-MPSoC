@@ -8,7 +8,7 @@ import Grafos from '../../components/Grafos';
 import InfosAplicacoes from '../../components/InfosAplicacoes';
 import BotoesApl from '../../components/BotoesApl';
 
-//Componente: Bloco isolado de HTML, o qual não interfere no restante da aplicação. 
+//Componente: Bloco isolado de HTML, o qual não interfere no restante da aplicação.
 //Propriedade: Informações que um componente PAI (o que contém) passa para o componente FILHO (o que está contido)
 //Estado: Informação que o componente pode manipular. (Lembrar: imutabilidade )
 
@@ -16,13 +16,7 @@ import BotoesApl from '../../components/BotoesApl';
 function Simulation(props) {
   const id = props.match.params.id;
 
-  const [contMatriz, setCont] = useState(['Matriz']);
-
-  const [openMenu, setMenu] = useState(false);
-
-  function tratarMenu (){
-    setMenu(!openMenu);
-  }
+  const [contMatriz, setCont] = useState([]);
 
   function tratarCont() {
     setCont([...contMatriz, "Matriz"]);
@@ -45,7 +39,7 @@ function Simulation(props) {
 
       </div>
 
-        
+
         <div className="flexheuristica">
           {
             contMatriz.map((matriz, index) => (
